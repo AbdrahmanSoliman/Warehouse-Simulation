@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TintRenderer: {fileID: 4382268677074299818}
   TintMaterialSlot: 1
+  TintMaterial: {fileID: 0}
 --- !u!1 &8974776837463427705
 GameObject:
   m_ObjectHideFlags: 0
@@ -148,6 +149,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4585722291741228042, guid: dea5c46ca71356b4f982a5963079ed96, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f4c8a23267bd4fa429c38f0fd9924bdf, type: 2}
+    - target: {fileID: -4585722291741228042, guid: dea5c46ca71356b4f982a5963079ed96, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1dbbe1a0aecf0044cb0d62d1361c34c2, type: 2}
     - target: {fileID: 919132149155446097, guid: dea5c46ca71356b4f982a5963079ed96, type: 3}
       propertyPath: m_Name
       value: Forklift

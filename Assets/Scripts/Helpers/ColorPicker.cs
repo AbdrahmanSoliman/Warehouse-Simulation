@@ -12,7 +12,7 @@ public class ColorPicker : MonoBehaviour
     public System.Action<Color> onColorChanged;
 
     List<Button> m_ColorButtons = new List<Button>();
-    
+
     // Start is called before the first frame update
     public void Init()
     {
@@ -45,6 +45,7 @@ public class ColorPicker : MonoBehaviour
             if (AvailableColors[i] == color)
             {
                 m_ColorButtons[i].onClick.Invoke();
+                PlayerPrefs.SetString("ColorKey", ColorUtility.ToHtmlStringRGB(color));
             }
         }
     }
